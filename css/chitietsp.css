@@ -1,8 +1,10 @@
 .chitietsp{
     display: flex;
-    margin-top: 40px;
-    margin-left: 150px;
-    margin-right: 150px;
+    padding-top: 40px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 40px;
+
 }
 .left-chitietsp{
     width: 45%;
@@ -12,40 +14,66 @@
 .left-chitietsp img{
     display: block;
     width: 100%;
-    height: 500px;
+    height: 450px;
     transition: all 0.3s ease-in-out;
 }
 .left-chitietsp:hover img{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .right-chitietsp{
     width: 65%;
-    padding-left: 80px;
+    margin-left: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-image: linear-gradient(135deg, #ff795b, #F38C25, #ffc388);
+    border-radius: 10px;
 }
 .chitietsp-tensp{
     font-size: 20px;
+    color: #fff;
+    margin-top: 10px;
+    padding-left: 5px;
 }
 .chitietsp-idsp{
     font-size: 15px;
-    color: rgb(171, 171, 171);
+    color: #fff;
     font-style: italic;
+    padding-left: 5px;
 }
 .chitietsp-gia{
-    color: rgb(2, 98, 232);
+    color: #fff;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 24px;
     margin-top: 10px;
+    padding-left: 5px;
+}
+.right-bg-black{
+    background-color: #2F3033;
+    border-radius: 5px;
+}
+.mota-sp{
+    padding-top: 10px;
+    color: #fff;
+    font-size: 15px;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+
 }
 .nut-themvaogio{
     cursor: pointer;
-    width: 250px;
-    height: 40px;
-    background-color: black;
+    width: 650px;
+    margin: 0 10px;
+    height: 60px;
+    background-color: #D43232;
+    border-radius: 10px;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 .themvaogio{
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 .nut-themvaogio:hover{
     background-color: red;
