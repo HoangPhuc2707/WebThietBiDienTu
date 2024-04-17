@@ -3,7 +3,7 @@
     <div class="content-footer">
         <div class="left-footer">
             <div class="left-img-footer">
-                <img src="images/logo.jpg" alt="">
+                <img src="images/logo1.png" alt="">
             </div>
             <div class="share">
                 <a id="fb" href="https://www.facebook.com/profile.php?id=100006271817422"><i

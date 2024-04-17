@@ -14,21 +14,36 @@ $sql_show = "SELECT * FROM sanpham,loai WHERE sanpham.id_loai=loai.id_loai ORDER
 $query_show = mysqli_query($conn, $sql_show);
 ?>
 <div class="bg-content">
-    <div class="banner">
-        <div class="img-banner"><img src="images/banner1.webp" alt=""></div>
-    </div>
-    <div class="sanphamchungtoi">
-        <h2>SẢN PHẨM CỦA CHÚNG TÔI</h2>
-        <div class="interface">
-            <div></div>
-            <img src="images/interface.svg" alt="">
-            <div></div>
+    <div class="jsbanner">
+        <div class="slide-show">
+            <div class="list-images">
+                <img class="img" src="images/banner4.webp" width="1200px" alt="">
+                <img class="img" src="images/banner3.webp" width="1200px" alt="">
+                <img class="img" src="images/banner2.webp" width="1200px" alt="">
+                <img class="img" src="images/banner1.webp" width="1200px" alt="">
+            </div>
+            <div class="btns">
+                <div class="jsleft leftjs">
+                    <div class="btn-left btn"><</div>
+                </div>
+                <div class="jsright rightjs">
+                    <div class="btn-right btn">></div>
+                </div>
+            </div>
         </div>
-
     </div>
-    <div class="sanpham">
+        <div class="sanphamchungtoi">
+            <h2>SẢN PHẨM CỦA CHÚNG TÔI</h2>
+            <div class="interface">
+                <div></div>
+                <img src="images/interface.svg" alt="">
+                <div></div>
+            </div>
 
-        <?php
+        </div>
+        <div class="sanpham">
+
+            <?php
         $result = laySp($conn);
         while ($row = mysqli_fetch_array($query_show)) {
             $idsp = $row["id_sp"];
@@ -55,22 +70,22 @@ $query_show = mysqli_query($conn, $sql_show);
         }
         ?>
 
-    </div>
-    <div class="phantrang">
-        <div class="phantrang1">
-            <?php
+        </div>
+        <div class="phantrang">
+            <div class="phantrang1">
+                <?php
             $sql_trang = mysqli_query($conn, "SELECT * FROM sanpham");
             $row_count = mysqli_num_rows($sql_trang);
             $trang = ceil($row_count / 12);
             ?>
-            <p>Trang hiện tại :
-                <?php echo $page ?>/
-                <?php echo $trang ?>
-            </p>
+                <p>Trang hiện tại :
+                    <?php echo $page ?>/
+                    <?php echo $trang ?>
+                </p>
 
-            <ul class="list_trang">
+                <ul class="list_trang">
 
-                <?php
+                    <?php
 
                 for ($i = 1; $i <= $trang; $i++) {
                     ?>
@@ -78,15 +93,14 @@ $query_show = mysqli_query($conn, $sql_show);
                         echo 'style="background: brown;"';
                     } else {
                         echo '';
-                    } ?>><a
-                            href="index.php?trang=<?php echo $i ?>">
+                    } ?>><a href="index.php?trang=<?php echo $i ?>">
                             <?php echo $i ?>
                         </a></li>
                     <?php
                 }
                 ?>
-            </ul>
+                </ul>
+            </div>
         </div>
-    </div>
 
-</div>
+    </div>
