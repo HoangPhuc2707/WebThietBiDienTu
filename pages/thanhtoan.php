@@ -18,8 +18,8 @@ if (isset($_POST['thanhtoan'])) {
     $phuongthucthanhtoan = $_POST['phuongthucthanhtoan'];
     $madh = "QPQ" . rand(0, 999999);
     $id_user = $_SESSION['id_user'];
-    $sql = "INSERT INTO `donhang`(`madh`,`tongdh`,`phuongthucthanhtoan`,`id_user`,`address`,`sdt`,`duyetdh`) 
-        VALUE('$madh','$tongdh','$phuongthucthanhtoan','$id_user','$address','$sdt',1)";
+    $sql = "INSERT INTO `donhang`(`madh`,`tongdh`,`phuongthucthanhtoan`,`id_user`,`address`,`duyetdh`) 
+        VALUE('$madh','$tongdh','$phuongthucthanhtoan','$id_user','$address',1)";
 
     if ($conn->query($sql) === TRUE) {
         //add dữ liệu vào giỏ hàng
@@ -30,8 +30,8 @@ if (isset($_POST['thanhtoan'])) {
             $sql_sp = "SELECT tensp,hinhanh,gia FROM `sanpham` WHERE id_sp=$id;";
             $data1 = $conn->query($sql_sp);
             $sp = mysqli_fetch_array($data1);
-            $sql = "INSERT INTO `giohang`(`id_dh`,`id_sp`,`soluong`,`dongia`,`tensp`,`hinhanh`) 
-            VALUE('$id_dh[0]','$id','$sl','$sp[gia]','$sp[tensp]','$sp[hinhanh]')";
+            $sql = "INSERT INTO `giohang`(`id_dh`,`id_sp`,`soluong`) 
+            VALUE('$id_dh[0]','$id','$sl')";
             $conn->query($sql);
         }
         unset($_SESSION['giohang']);

@@ -15,11 +15,19 @@ require 'conn.php';
             </div>
             <div class="user">
                 <?php
-         if (isset($_SESSION['user']) && ($_SESSION['user'] != "")) {
-            echo '<p><a class="dndk" href="">' . $_SESSION['user'] . '</a>|<a class="dndk" href="admin/pages/out.php">Đăng xuất</a></p>';
+         if (isset($_SESSION['email']) && ($_SESSION['email'] != "")) {
+            echo '<div class="icon-user">
+            <div class="img-user"><img src="images/icons8-user-30.png" alt=""></div>
+            <div><p><a class="dndk" href="">' . $_SESSION['user'] . '</a></p></div>
+            <div class="down-user">
+                <div class="logout"><img class="img-logout" src="images/icons8-logout-50.png" alt="">
+                <a class="dndk" href="admin/pages/out.php">Đăng xuất</a></div>
+            </div>
+        </div>';
          } else {
             ?>
-                <p><a class="dndk" href="admin/pages/login.php">ĐĂNG NHẬP</a></p>
+                <div class="img-user"><img src="images/icons8-user-30.png" alt=""></div>
+                <p class="login"><a class="dndk" href="admin/pages/login.php">ĐĂNG NHẬP</a></p>
                 <?php
          }
          ?>

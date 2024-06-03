@@ -60,27 +60,32 @@
                     $_SESSION["danhsachsanpham"] = $id_arraysp;
                     ?>
                     <input class="thongtinmuahang" type="hidden" name="tongdh" value="<?= $tong ?>">
-                    <div>
+                    <div style="font-size:18px; padding-left: 10px;"> <b>
                     <?php
-                         if (isset($_SESSION['user']) && ($_SESSION['user'] != "")) {
-                            echo '<p>Tài khoản: ' . $_SESSION['user'] . '</p>';
+                         if (isset($_SESSION['email']) && ($_SESSION['email'] != "")) {
+                            echo '<p>Tên khách hàng: ' . $_SESSION['user'] . '</p>';
                         }
-                    ?>
+                    ?></b>
+                    </div>
+                    <div style="margin-top:5px;">
+                        <p style="font-size:18px; padding-left: 10px;"><b>Địa chỉ nhận hàng:</b></p>
                     </div>
                     <div>
-                        <input class="thongtinmuahang" type="text" name="address" placeholder="Địa chỉ" required>
+                        <input class="thongtinmuahang" type="text" name="address" placeholder="Nhập địa chỉ..." required>
                     </div>
-                    
-                    <div>
-                        <input class="thongtinmuahang" type="text" name="sdt" placeholder="Số điện thoại" required>
+                    <!-- <div>
+                        <p style="font-size:18px; padding-left: 10px;"><b>Số điện thoại</b></p>
                     </div>
                     <div>
-                        <label for="pttt">Phương thức thanh toán </label> <br>
+                        <input class="thongtinmuahang" type="text" name="sdt" placeholder="Nhập số điện thoại..." required>
+                    </div> -->
+                    <div>
+                        <label for="pttt" style="font-size:18px; padding-left: 10px;"><b>Phương thức thanh toán </b></label> <br>
                         <input type="radio" name="phuongthucthanhtoan" value="1"> Thanh toán khi nhận hàng
                     </div>
                 </div>
                 <?php
-                if (isset($_SESSION['user']) && ($_SESSION['user'] != "")) {
+                if (isset($_SESSION['email']) && ($_SESSION['email'] != "")) {
                     echo '<input type="submit" class="btn-thanhtoan" name="thanhtoan" value="ĐẶT HÀNG">';
                 } else {
                     ?>

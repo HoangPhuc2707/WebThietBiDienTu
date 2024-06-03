@@ -38,7 +38,18 @@
             <p>Địa chỉ: 256 Đ. Nguyễn Văn Cừ, An Hoà, Ninh Kiều, Cần Thơ</p>
             <p>Email: thphuc2100139@student.ctuet.edu.vn</p>
             <p>Điện thoại: 09 86 86 86 86</p>
-            <div class="thank-footer">Thank You !</div>
+            <!-- <div class="thank-footer">Thank You !</div> -->
+            <section class="hero">
+                    <div class="container">
+                        <div class="hero-container">
+                            <div class="hero-content">
+                            </div>
+                            <div class="hero-image">
+                                <img srcset="./images/thanks.png 2x" width = "250px" alt="">
+                            </div>
+                        </div>
+                    </div>
+            </section>
         </div>
     </div>
     <div class="bottom-footer">

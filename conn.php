@@ -1,6 +1,6 @@
 <?php
 $host = "localhost";
-$db = "thietbidientu";
+$db = "webtbdt2";
 $user = "root";
 $pass = "";
 $conn = new mysqli($host, $user, $pass, $db);
