@@ -88,5 +88,5 @@ require "pages/func.php";
 
 </body>
 <script type="text/javascript" src="js/modal.js"></script>
-
+<script type="text/javascript" src="js/ontop.js"></script>
 </html>

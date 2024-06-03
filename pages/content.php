@@ -14,6 +14,10 @@ $sql_show = "SELECT * FROM sanpham,loai WHERE sanpham.id_loai=loai.id_loai ORDER
 $query_show = mysqli_query($conn, $sql_show);
 ?>
 <div class="bg-content">
+    <div class="onclick">
+            <!-- <button onclick="topFunction()" id="myBtn" title="Lên đầu trang">Top</button> -->
+            <button id="myBtn" onclick="topFunction()"> <i  class="fa fa-arrow-up"></i></button>
+        </div>
     <div class="jsbanner">
         <div class="slide-show">
             <div class="list-images">

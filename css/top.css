@@ -68,37 +68,72 @@
 
 
 .user{
-    width: 150px;
+    width: 200px;
     height: 30px;
     text-align: right;
     font-weight: bold;
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-left: 200px;
+    margin-left: 150px;
+    padding-top: 10px;
 }
 .user a, .user p{
     color: black;
     text-decoration: none;
 }
-.dndk:hover{
+
+
+
+.logout a{
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+.dndk:hover {
     color: red;
 }
 
+.img-user img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+.icon-user{
+    position: relative;
+}
+.icon-user:hover .down-user{
+    display: block;
+}
+.down-user{
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    display: none;
+    margin-left: 100px;
+    background: #f8f8f8;
+    border: 1px solid #cdcdcd;
+    border-radius: 5px;
+}
+.login{
+    margin-right: -26px;
+}
+.img-logout{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
 .buy{
     width: 150px;
     height: 40px;
-    margin-left: 10px;
-    margin-top: 10px;
-    display: flex;
+    padding-top: 10px;
+    margin-left: 60px;
     color: black;
     font-weight: bold;
 }
 .buy img{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    margin-left: 25px;
 }
 .buy-text{
-    padding-top: 10px;
     padding-left: 5px;
 }
 .buy:hover{
