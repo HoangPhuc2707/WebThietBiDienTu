@@ -1,0 +1,36 @@
+.khoangkhongvodinh{
+    width: 100%;
+    height: 40px;
+    background-color: #f8f8f8;
+}
+.top-timkiem{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(237, 236, 236);
+}
+.top-tk-main{
+    padding-top: 20px;
+    padding-left: 7%;
+    padding-right: 5px;
+    text-decoration: none;
+    color: black;
+    
+}
+.top-tk-loai{
+    padding-top: 20px;
+    padding-right: 5px;
+    text-decoration: none;
+    color: black;
+}
+.top-timkiem a:hover{
+    color: rgb(222, 30, 30);
+}
+.top-timkiem p{
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.top-tk-tensp, .kqtk{
+    color: rgb(222, 30, 30);
+}
