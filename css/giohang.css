@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+.giohang{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+.giohang a{
+    color: black;
+}
+.content-giohang{
+    display: flex;
+    justify-content: space-between;
+}
+.left-giohang{
+    width: 60%;
+    padding-left: 10px;
+}
+.left-giohang a:hover{
+    color: red;
+}
+.right-giohang{
+    width: 30%;
+}
+.table-giohang{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.table-giohang img{
+    width: 100px;
+    height: 100px;
+
+}
+.table-giohang td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.table-giohang th{
+    background-color: rgb(112, 191, 255);
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.tr-churagiua td{
+    text-align: center;
+}
+.tonggiatridh{
+    background-color: #e5e5e5;
+}
+.td-tong{
+    text-align: center;
+}
+.thongtinmuahang{
+    padding: 10px;
+    margin: 5px 0;
+    width: 350px;
+    font-size: 15px;
+    border: 2px solid #9d9d9d;
+    border-radius: 5px;
+    
+}
+.btn-thanhtoan{
+    text-align: center;
+    margin-top: 10px;
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    background-color: #D43232;
+    cursor: pointer;
+}
+.btn-thanhtoan:hover{
+    background-color: red;
+}
+
