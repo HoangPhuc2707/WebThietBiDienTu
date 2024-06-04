@@ -1,0 +1,1 @@
+ <p style="font-weight:bold;text-align:center;">- Mọi quyết định của bạn sẽ ảnh hưởng trực tiếp đến trang web. Hãy thao tác một cách khôn ngoan! -</p>
