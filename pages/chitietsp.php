@@ -25,7 +25,7 @@ while ($row_Chitietsp = mysqli_fetch_array($query_Chitietsp)) {
                 <h2><?php echo $row_Chitietsp["tensp"]; ?></h2>
             </div>
             <div class="chitietsp-idsp">
-                <?php echo $row_Chitietsp["id_sp"]; ?>
+                #Mã sản phẩm: <?php echo $row_Chitietsp["id_sp"]; ?>
             </div>
             <div class="chitietsp-gia">
                 <?php echo $row_Chitietsp["gia"] . "0.000đ"; ?>

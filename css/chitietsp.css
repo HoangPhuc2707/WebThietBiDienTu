@@ -4,7 +4,6 @@
     padding-left: 150px;
     padding-right: 150px;
     padding-bottom: 40px;
-
 }
 .left-chitietsp{
     width: 45%;
@@ -25,35 +24,34 @@
     margin-left: 40px;
     padding-left: 5px;
     padding-right: 5px;
-    background-image: linear-gradient(135deg, #ff795b, #F38C25, #ffc388);
     border-radius: 10px;
 }
 .chitietsp-tensp{
     font-size: 20px;
-    color: #fff;
+    color: #2F3033;
     margin-top: 10px;
     padding-left: 5px;
 }
 .chitietsp-idsp{
     font-size: 15px;
-    color: #fff;
+    color: #2F3033;
     font-style: italic;
     padding-left: 5px;
 }
 .chitietsp-gia{
-    color: #fff;
+    color: red;
     font-weight: bold;
     font-size: 24px;
     margin-top: 10px;
     padding-left: 5px;
 }
 .right-bg-black{
-    background-color: #2F3033;
+    background-color: #f8f8f8;
     border-radius: 5px;
 }
 .mota-sp{
     padding-top: 10px;
-    color: #fff;
+    color: #2F3033;
     font-size: 15px;
     text-align: justify;
     padding-left: 10px;
