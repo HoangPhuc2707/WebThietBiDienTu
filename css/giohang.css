@@ -52,6 +52,18 @@
 .td-tong{
     text-align: center;
 }
+
+.icon-cart-clear{
+    width: 200px;
+    height: auto;
+    margin-left: 50%;
+}
+.text-cart-clear{
+    font-size: 15px;
+    color: grey;
+    margin-left: 50%;
+    font-style: italic;
+}
 .thongtinmuahang{
     padding: 10px;
     margin: 5px 0;

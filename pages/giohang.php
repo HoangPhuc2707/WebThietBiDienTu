@@ -40,8 +40,8 @@
                 echo '<tr class="tonggiatridh"><td colspan="6">Tổng giá trị đơn hàng</td><td class="td-tong">' . $tong . '0.000đ</td><td></td></tr>';
                 echo '</table>';
             } else {
-                echo '<br>';
-                echo 'Giỏ hàng đang rỗng.';
+                echo '<img class="icon-cart-clear" src="images/icons8-clear-shopping-cart-96.png" alt=""><br>';
+                echo '<div class="text-cart-clear">#Giỏ hàng đang rỗng.</div>';
             }
             ?>
             <div>
